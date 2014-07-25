@@ -1,7 +1,7 @@
 {
   "name": "skiperr",
   "description": "A less-instrusive way of passing errors along in JavaScript / NodeJS.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "skiperr.js",
   "private": false,
   "dependencies": {},

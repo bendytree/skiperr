@@ -1,6 +1,6 @@
 ##Overview
 
-`skiperr` is a less-invasive way of avoiding:
+`skiperr` is a way to avoid:
 
 ```javascript
 if (err) return next(err);
@@ -16,7 +16,7 @@ var getSomething = function (done) {
 }
 ```
 
-The callback pattern in node will often leave you checking for errors and passing them along. [Promises](https://www.promisejs.org/) are a way of avoiding this repetition, but they are a bit viral. This library aims to let you continue using standard callbacks but with a slightly nicer syntax.
+The callback pattern in node will often leave you checking for errors and passing them along. [Promises](https://www.promisejs.org/) are a way of avoiding this repetition, but they transform your entire code base. This library lets you continue using standard callbacks with a slightly nicer syntax.
 
 
 ##Usage
