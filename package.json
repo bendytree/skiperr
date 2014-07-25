@@ -1,11 +1,12 @@
 {
   "name": "skiperr",
   "description": "A less-instrusive way of passing errors along in JavaScript / NodeJS.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "skiperr.js",
   "private": false,
   "dependencies": {},
   "license": "MIT",
+  "bugs": "https://github.com/bendytree/skiperr/issues",
   "homepage": "https://github.com/bendytree/skiperr",
   "keywords": ["err", "error", "callback", "skip", "pass", "skiper", "skiperr"],
   "author": "Josh Wright <josh@bendytree.com> (http://joshwright.com/)",

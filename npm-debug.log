@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose publish [ './' ]
+5 verbose cache add [ './', null ]
+6 verbose cache add name=undefined spec="./" args=["./",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: './',
+7 verbose parsed url   path: './',
+7 verbose parsed url   href: './' }
+8 silly lockFile 0ee6c175- ./
+9 verbose lock ./ /Users/joshinnorman/.npm/0ee6c175-.lock
+10 verbose tar pack [ '/var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz',
+10 verbose tar pack   './' ]
+11 verbose tarball /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz
+12 verbose folder ./
+13 info prepublish skiperr@0.0.1
+14 silly lockFile 04cb2bca-tar tar://./
+15 verbose lock tar://./ /Users/joshinnorman/.npm/04cb2bca-tar.lock
+16 silly lockFile b5f8c5e4-111-0-043088807025924325-tmp-tgz tar:///var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz
+17 verbose lock tar:///var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz /Users/joshinnorman/.npm/b5f8c5e4-111-0-043088807025924325-tmp-tgz.lock
+18 silly lockFile 04cb2bca-tar tar://./
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile b5f8c5e4-111-0-043088807025924325-tmp-tgz tar:///var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz
+21 silly lockFile b5f8c5e4-111-0-043088807025924325-tmp-tgz tar:///var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz
+22 verbose tar unpack /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz
+23 silly lockFile fa3b3afd-norman-npm-skiperr-0-0-1-package tar:///Users/joshinnorman/.npm/skiperr/0.0.1/package
+24 verbose lock tar:///Users/joshinnorman/.npm/skiperr/0.0.1/package /Users/joshinnorman/.npm/fa3b3afd-norman-npm-skiperr-0-0-1-package.lock
+25 silly lockFile b5f8c5e4-111-0-043088807025924325-tmp-tgz tar:///var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz
+26 verbose lock tar:///var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz /Users/joshinnorman/.npm/b5f8c5e4-111-0-043088807025924325-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry skiperr.js
+30 silly gunzTarPerm extractEntry test.js
+31 silly gunzTarPerm extractEntry LICENSE.txt
+32 silly gunzTarPerm extractEntry readme.md
+33 silly lockFile fa3b3afd-norman-npm-skiperr-0-0-1-package tar:///Users/joshinnorman/.npm/skiperr/0.0.1/package
+34 silly lockFile fa3b3afd-norman-npm-skiperr-0-0-1-package tar:///Users/joshinnorman/.npm/skiperr/0.0.1/package
+35 silly lockFile b5f8c5e4-111-0-043088807025924325-tmp-tgz tar:///var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz
+36 silly lockFile b5f8c5e4-111-0-043088807025924325-tmp-tgz tar:///var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-9686-tYtT_qs3/1406304668111-0.043088807025924325/tmp.tgz
+37 silly lockFile 0ee6c175- ./
+38 silly lockFile 0ee6c175- ./
+39 silly publish { name: 'skiperr',
+39 silly publish   description: 'A less-instrusive way of passing errors along in JavaScript / NodeJS.',
+39 silly publish   version: '0.0.1',
+39 silly publish   main: 'skiperr.js',
+39 silly publish   private: false,
+39 silly publish   dependencies: {},
+39 silly publish   license: 'MIT',
+39 silly publish   homepage: 'https://github.com/bendytree/skiperr',
+39 silly publish   keywords: [ 'err', 'error', 'callback', 'skip', 'pass', 'skiper', 'skiperr' ],
+39 silly publish   author:
+39 silly publish    { name: 'Josh Wright',
+39 silly publish      email: 'josh@bendytree.com',
+39 silly publish      url: 'http://joshwright.com/' },
+39 silly publish   contributors:
+39 silly publish    [ { name: 'Josh Wright',
+39 silly publish        email: 'josh@bendytree.com',
+39 silly publish        url: 'http://joshwright.com/' } ],
+39 silly publish   readme: '##Overview\n\n`skiperr` is a less-invasive way of avoiding:\n\n```javascript\nif (err) return next(err);\n```\n\nUsing `skiperr` looks like:\n\n```javascript\nvar getSomething = function (done) {\n  db.find(function(result){\n    callback(null, parseInt(result));\n  }.skiperr(done));\n}\n```\n\nThe callback pattern in node will often leave you checking for errors and passing them along. [Promises](https://www.promisejs.org/) are a way of avoiding this repetition, but they are a bit viral. This library aims to let you continue using standard callbacks but with a slightly nicer syntax.\n\n\n##Usage\n\nIn NodeJS, it\'s common to check for an error and pass it along. For example:\n\n```javascript\n// without skiperr\nvar getSomething = function (callback) {\n  db.find(function(err, result){\n    // error? pass it on\n    if (err) return callback(err);\n\n    callback(null, parseInt(result));\n  });\n}\n```\n\nThis module lets you automatically pass those errors on without an explicit check:\n\n```javascript\n// with skiperr\nvar getSomething = function (callback) {\n  db.find(function(result){\n    callback(null, parseInt(result));\n  }.skiperr(callback));\n}\n```\n\n\n##Examples\n\n```javascript\nvar done = function (err, result) {\n  console.log("Done", arguments);\n};\n\nvar myCallback = function (result) {\n  console.log("MyCallback", arguments);\n  done(null, result);\n}.skiperr(done);\n\n// when no error happens\nmyCallback(null, 3);\n> MyCallback [3]\n> Done [null, 3]\n\n// when an error happens\nmyCallback(\'It broke\', 4);\n> Done [\'It broke\', 3]\n```\n    \n## How It Works\n\nIt\'s very simple. You call `.skiperr()` on your function and pass the callback.\n\nIf `skiperr` receives an error, it will skip your function and just call the callback directly. If `skiperr` does not receive an error, it will call your function.\n\nThis means that you don\'t have to check for errors. If an error happened, your function is skipped.\n\n## Documentation\n\nInstall `skiperr` from npm:\n\n    > npm install skiperr --save\n\nWhen your app starts up, include the `skiperr` module so it can extend `Function.prototype`.\n\n```javascript\nrequire(\'skiperr\');\n```\n\n####.skiperr(callback)\n\nThen you call `.skiperr(...)` it on your function.\n\nGenerally it\'s a bad idea to muck with a prototype, but let\'s be honest - if you don\'t want to mess with the function prototype then you don\'t want this module.\n\n####Arguments\n\n - `callback` - Required. The callback that should receive the error. All arguments are passed to this callback in the case of an error.\n \n\n## Testing\n\nThis repository includes tests written in [mocha](http://visionmedia.github.io/mocha/).\n \n\n## License\n\n[MIT License](http://en.wikipedia.org/wiki/MIT_License)\n    \n    ',
+39 silly publish   readmeFilename: 'readme.md',
+39 silly publish   _id: 'skiperr@0.0.1',
+39 silly publish   _shasum: '54c6e4ad9215a46a334770c5bd22bf7a1d7ecc21',
+39 silly publish   _from: './' }
+40 verbose url raw skiperr
+41 verbose url resolving [ 'https://registry.npmjs.org/', './skiperr' ]
+42 verbose url resolved https://registry.npmjs.org/skiperr
+43 info trying registry request attempt 1 at 11:11:08
+44 http PUT https://registry.npmjs.org/skiperr
+45 http 403 https://registry.npmjs.org/skiperr
+46 verbose headers { date: 'Fri, 25 Jul 2014 16:11:09 GMT',
+46 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+46 verbose headers   'content-type': 'application/json',
+46 verbose headers   'cache-control': 'max-age=60',
+46 verbose headers   'content-length': '5455',
+46 verbose headers   'accept-ranges': 'bytes',
+46 verbose headers   via: '1.1 varnish',
+46 verbose headers   'x-served-by': 'cache-dfw1827-DFW',
+46 verbose headers   'x-cache': 'MISS',
+46 verbose headers   'x-cache-hits': '0',
+46 verbose headers   'x-timer': 'S1406304669.150154,VS0,VE202',
+46 verbose headers   'keep-alive': 'timeout=10, max=50',
+46 verbose headers   connection: 'Keep-Alive' }
+47 error publish Failed PUT 403
+48 error Error: forbidden cannot modify pre-existing version: 0.0.1
+48 error old={"name":"skiperr","description":"A less-instrusive way of passing errors along in JavaScript / NodeJS.","version":"0.0.1","main":"skiperr.js","private":false,"dependencies":{},"license":"MIT","homepage":"https://github.com/bendytree/skiperr","keywords":["err","error","callback","skip","pass","skiper","skiperr"],"author":{"name":"Josh Wright","email":"josh@bendytree.com","url":"http://joshwright.com/"},"contributors":[{"name":"Josh Wright","email":"josh@bendytree.com","url":"http://joshwright.com/"}],"_id":"skiperr@0.0.1","_shasum":"a80c53485e35cac96a1cc835f9f57c2bfdeb2c90","_from":"./","_npmVersion":"1.4.9","_npmUser":{"name":"bendytree","email":"josh@bendytree.com"},"maintainers":[{"name":"bendytree","email":"josh@bendytree.com"}],"dist":{"shasum":"a80c53485e35cac96a1cc835f9f57c2bfdeb2c90","tarball":"http://registry.npmjs.org/skiperr/-/skiperr-0.0.1.tgz"}}
+48 error new={"name":"skiperr","description":"A less-instrusive way of passing errors along in JavaScript / NodeJS.","version":"0.0.1","main":"skiperr.js","private":false,"dependencies":{},"license":"MIT","homepage":"https://github.com/bendytree/skiperr","keywords":["err","error","callback","skip","pass","skiper","skiperr"],"author":{"name":"Josh Wright","email":"josh@bendytree.com","url":"http://joshwright.com/"},"contributors":[{"name":"Josh Wright","email":"josh@bendytree.com","url":"http://joshwright.com/"}],"readme":"##Overview\u000a\u000a`skiperr` is a less-invasive way of avoiding:\u000a\u000a```javascript\u000aif (err) return next(err);\u000a```\u000a\u000aUsing `skiperr` looks like:\u000a\u000a```javascript\u000avar getSomething = function (done) {\u000a  db.find(function(result){\u000a    callback(null, parseInt(result));\u000a  }.skiperr(done));\u000a}\u000a```\u000a\u000aThe callback pattern in node will often leave you checking for errors and passing them along. [Promises](https://www.promisejs.org/) are a way of avoiding this repetition, but they are a bit viral. This library aims to let you continue using standard callbacks but with a slightly nicer syntax.\u000a\u000a\u000a##Usage\u000a\u000aIn NodeJS, it's common to check for an error and pass it along. For example:\u000a\u000a```javascript\u000a// without skiperr\u000avar getSomething = function (callback) {\u000a  db.find(function(err, result){\u000a    // error? pass it on\u000a    if (err) return callback(err);\u000a\u000a    callback(null, parseInt(result));\u000a  });\u000a}\u000a```\u000a\u000aThis module lets you automatically pass those errors on without an explicit check:\u000a\u000a```javascript\u000a// with skiperr\u000avar getSomething = function (callback) {\u000a  db.find(function(result){\u000a    callback(null, parseInt(result));\u000a  }.skiperr(callback));\u000a}\u000a```\u000a\u000a\u000a##Examples\u000a\u000a```javascript\u000avar done = function (err, result) {\u000a  console.log(\"Done\", arguments);\u000a};\u000a\u000avar myCallback = function (result) {\u000a  console.log(\"MyCallback\", arguments);\u000a  done(null, result);\u000a}.skiperr(done);\u000a\u000a// when no error happens\u000amyCallback(null, 3);\u000a> MyCallback [3]\u000a> Done [null, 3]\u000a\u000a// when an error happens\u000amyCallback('It broke', 4);\u000a> Done ['It broke', 3]\u000a```\u000a    \u000a## How It Works\u000a\u000aIt's very simple. You call `.skiperr()` on your function and pass the callback.\u000a\u000aIf `skiperr` receives an error, it will skip your function and just call the callback directly. If `skiperr` does not receive an error, it will call your function.\u000a\u000aThis means that you don't have to check for errors. If an error happened, your function is skipped.\u000a\u000a## Documentation\u000a\u000aInstall `skiperr` from npm:\u000a\u000a    > npm install skiperr --save\u000a\u000aWhen your app starts up, include the `skiperr` module so it can extend `Function.prototype`.\u000a\u000a```javascript\u000arequire('skiperr');\u000a```\u000a\u000a####.skiperr(callback)\u000a\u000aThen you call `.skiperr(...)` it on your function.\u000a\u000aGenerally it's a bad idea to muck with a prototype, but let's be honest - if you don't want to mess with the function prototype then you don't want this module.\u000a\u000a####Arguments\u000a\u000a - `callback` - Required. The callback that should receive the error. All arguments are passed to this callback in the case of an error.\u000a \u000a\u000a## Testing\u000a\u000aThis repository includes tests written in [mocha](http://visionmedia.github.io/mocha/).\u000a \u000a\u000a## License\u000a\u000a[MIT License](http://en.wikipedia.org/wiki/MIT_License)\u000a    \u000a    ","readmeFilename":"readme.md","_id":"skiperr@0.0.1","_shasum":"54c6e4ad9215a46a334770c5bd22bf7a1d7ecc21","_from":"./","_npmVersion":"1.4.9","_npmUser":{"name":"bendytree","email":"josh@bendytree.com"},"maintainers":[{"name":"bendytree","email":"josh@bendytree.com"}],"dist":{"shasum":"54c6e4ad9215a46a334770c5bd22bf7a1d7ecc21","tarball":"http://registry.npmjs.org/skiperr/-/skiperr-0.0.1.tgz"}}: skiperr
+48 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+48 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+48 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+48 error     at Request.EventEmitter.emit (events.js:98:17)
+48 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+48 error     at Request.EventEmitter.emit (events.js:117:20)
+48 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+48 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+48 error     at _stream_readable.js:919:16
+48 error     at process._tickCallback (node.js:419:13)
+49 error If you need help, you may report this *entire* log,
+49 error including the npm and node versions, at:
+49 error     <http://github.com/npm/npm/issues>
+50 error System Darwin 13.3.0
+51 error command "node" "/usr/local/bin/npm" "publish" "./"
+52 error cwd /Users/joshinnorman/Projects/skiperr
+53 error node -v v0.10.28
+54 error npm -v 1.4.9
+55 verbose exit [ 1, true ]
