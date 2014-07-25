@@ -5,24 +5,28 @@
 
 `skiperr` is a less-invasive way of avoiding this:
 
-    if (err) return next(err);
+```javascript
+if (err) return next(err);
+```
 
-The callback pattern in node will often leave you checking for errors and passing them along. Promises are a way of avoiding this repetition, but they are a bit viral. This library aims to let you continue using standard callbacks but with a slightly nicer syntax.
+The callback pattern in node will often leave you checking for errors and passing them along. [Promises](https://www.promisejs.org/) are a way of avoiding this repetition, but they are a bit viral. This library aims to let you continue using standard callbacks but with a slightly nicer syntax.
 
 
 ##Usage
 
 In NodeJS, it's common to check for an error and pass it along. For example:
 
-    // without skiperr
-    var getSomething = function (callback) {
-      db.find(function(err, result){
-        // error? pass it on
-        if (err) return callback(err);
+```javascript
+// without skiperr
+var getSomething = function (callback) {
+  db.find(function(err, result){
+    // error? pass it on
+    if (err) return callback(err);
 
-        callback(null, parseInt(result));
-      });
-    }
+    callback(null, parseInt(result));
+  });
+}
+```
 
 This module lets you automatically pass those errors on without an explicit check:
 
@@ -72,13 +76,13 @@ When your app starts up, include the `skiperr` module so it can extend `Function
 
     require('skiperr');
 
-###.skiperr(callback)
+####.skiperr(callback)
 
 Then you call `.skiperr(...)` it on your function.
 
-Generally it's a bad idea to much with a prototype, but let's be honest - if you don't want to mess with the function prototype then you don't want this module.
+Generally it's a bad idea to muck with a prototype, but let's be honest - if you don't want to mess with the function prototype then you don't want this module.
 
-###Arguments
+####Arguments
 
  - `callback` - Required. The callback that should receive the error. All arguments are passed to this callback in the case of an error.
  
