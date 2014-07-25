@@ -1,12 +1,19 @@
-
-# skiperr
-
 ##Overview
 
-`skiperr` is a less-invasive way of avoiding this:
+`skiperr` is a less-invasive way of avoiding:
 
 ```javascript
 if (err) return next(err);
+```
+
+Using `skiperr` looks like:
+
+```javascript
+var getSomething = function (done) {
+  db.find(function(result){
+    callback(null, parseInt(result));
+  }.skiperr(done));
+}
 ```
 
 The callback pattern in node will often leave you checking for errors and passing them along. [Promises](https://www.promisejs.org/) are a way of avoiding this repetition, but they are a bit viral. This library aims to let you continue using standard callbacks but with a slightly nicer syntax.
