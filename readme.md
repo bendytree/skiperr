@@ -30,33 +30,37 @@ var getSomething = function (callback) {
 
 This module lets you automatically pass those errors on without an explicit check:
 
-    // with skiperr
-    var getSomething = function (callback) {
-      db.find(function(result){
-        callback(null, parseInt(result));
-      }.skiperr(callback));
-    }
+```javascript
+// with skiperr
+var getSomething = function (callback) {
+  db.find(function(result){
+    callback(null, parseInt(result));
+  }.skiperr(callback));
+}
+```
 
 
 ##Examples
 
-    var done = function (err, result) {
-      console.log("Done", arguments);
-    };
+```javascript
+var done = function (err, result) {
+  console.log("Done", arguments);
+};
 
-    var myCallback = function (result) {
-      console.log("MyCallback", arguments);
-      done(null, result);
-    }.skiperr(done);
-    
-    // when no error happens
-    myCallback(null, 3);
-    > MyCallback [3]
-    > Done [null, 3]
-    
-    // when an error happens
-    myCallback('It broke', 4);
-    > Done ['It broke', 3]
+var myCallback = function (result) {
+  console.log("MyCallback", arguments);
+  done(null, result);
+}.skiperr(done);
+
+// when no error happens
+myCallback(null, 3);
+> MyCallback [3]
+> Done [null, 3]
+
+// when an error happens
+myCallback('It broke', 4);
+> Done ['It broke', 3]
+```
     
 ## How It Works
 
@@ -74,7 +78,9 @@ Install `skiperr` from npm:
 
 When your app starts up, include the `skiperr` module so it can extend `Function.prototype`.
 
-    require('skiperr');
+```javascript
+require('skiperr');
+```
 
 ####.skiperr(callback)
 
