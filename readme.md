@@ -102,7 +102,7 @@ Generally it's a bad idea to muck with a prototype, but let's be honest - if you
 
 ## Testing
 
-This repository includes tests written in [mocha](http://visionmedia.github.io/mocha/).
+This repository includes tests written in [mocha](http://mochajs.org/).
  
 
 ## License
